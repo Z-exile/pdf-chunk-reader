@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 200" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="680" height="200" fill="#ffffff"/>
+  <text x="340" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">pdf-chunk-reader Workflow</text>
+  <g>
+    <rect x="8" y="58" width="116" height="64" rx="10" fill="#2563eb"/>
+    <text x="66" y="86" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">① Analyze PDF</text>
+    <text x="66" y="108" text-anchor="middle" font-size="11" fill="#dbeafe">pages &amp; size</text>
+
+    <rect x="138" y="58" width="116" height="64" rx="10" fill="#2563eb"/>
+    <text x="196" y="86" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">② Split+Extract</text>
+    <text x="196" y="108" text-anchor="middle" font-size="11" fill="#dbeafe">pdf_splitter.py</text>
+
+    <rect x="268" y="58" width="116" height="64" rx="10" fill="#2563eb"/>
+    <text x="326" y="86" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">③ Read Chunks</text>
+    <text x="326" y="108" text-anchor="middle" font-size="11" fill="#dbeafe">read each .txt</text>
+
+    <rect x="398" y="58" width="116" height="64" rx="10" fill="#2563eb"/>
+    <text x="456" y="86" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">④ Notes</text>
+    <text x="456" y="108" text-anchor="middle" font-size="11" fill="#dbeafe">findings &amp; data</text>
+
+    <rect x="528" y="58" width="116" height="64" rx="10" fill="#1d4ed8"/>
+    <text x="586" y="86" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">⑤ Consolidate</text>
+    <text x="586" y="108" text-anchor="middle" font-size="11" fill="#dbeafe">10-section summary</text>
+  </g>
+  <line x1="124" y1="90" x2="135" y2="90" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="254" y1="90" x2="265" y2="90" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="384" y1="90" x2="395" y2="90" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="514" y1="90" x2="525" y2="90" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="340" y="160" text-anchor="middle" font-size="11" fill="#64748b">Chunking: ≤20 no split · 21–50:10 · 51–100:15 · 101–300:20 · 300+:25</text>
+  <text x="340" y="182" text-anchor="middle" font-size="11" fill="#64748b">Output: per-chunk .pdf + .txt + manifest.json → consolidated_summary.md</text>
+</svg>

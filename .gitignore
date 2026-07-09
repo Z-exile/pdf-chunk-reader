@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+
+# Generated split artifacts (produced when running on a real PDF)
+_split_*/
+
+# OS
+.DS_Store
+Thumbs.db
